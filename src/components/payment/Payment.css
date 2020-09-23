@@ -3,10 +3,13 @@
 }
 .payment__container {
   text-align: center;
-  padding: 10px;
+  padding: 50px;
   font-weight: 400;
   background-color: rgb(234, 237, 237);
   border-bottom: 1px solid lightgray;
+}
+.payment__container > h1 {
+  margin-bottom: 15px;
 }
 
 .payment__container > h1 a {
@@ -24,10 +27,15 @@
 .payment__title {
   flex: 0.2;
 }
+
+.payment__details {
+  margin-left: auto;
+}
+
 .payment__address,
 .payment__items,
 .payment__details {
-  flex: 0.8;
+  flex: 0.6;
 }
 
 .payment__details > form {
@@ -49,4 +57,8 @@
   bottom: 1px solid;
   margin-top: 10px;
   color: #111;
+}
+
+.payment__container > h1 > a {
+  color: black;
 }
