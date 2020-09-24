@@ -1,4 +1,5 @@
 import React from "react";
+import { Carousel } from "react-bootstrap";
 import Product from "../product/Product";
 import "./Home.css";
 
@@ -11,30 +12,89 @@ function Home() {
           src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
           alt=""
         />
+        <div className="home__slider">
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://cdn.pixabay.com/photo/2017/09/13/17/03/technology-2746212_960_720.jpg"
+                alt="First slide"
+              />
+              <Carousel.Caption>
+                <h2>Electronics</h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://cdn.pixabay.com/photo/2017/05/06/14/13/pathway-2289978_960_720.jpg"
+                alt="Third slide"
+              />
+
+              <Carousel.Caption>
+                <h2>Gardening</h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://cdn.pixabay.com/photo/2015/10/12/15/18/clothing-store-984396_960_720.jpg"
+                alt="Third slide"
+              />
+
+              <Carousel.Caption>
+                <h2>Fashion</h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://cdn.pixabay.com/photo/2020/02/23/09/26/sound-4872771_960_720.jpg"
+                alt="Music"
+              />
+
+              <Carousel.Caption>
+                <h2>Music</h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_960_720.jpg"
+                alt="Music"
+              />
+
+              <Carousel.Caption>
+                <h2>Sport</h2>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+
         <div className="home__row">
           <Product
             id="12321341"
-            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            price={11.96}
+            title="AmazonBasics High Speed ​​HDMI 2.0 Cable Single Pack 1.8m Black"
+            price={6.81}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/71pFDaZU8lL._AC_SL1500_.jpg"
           />
           <Product
             id="49538094"
-            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
-            price={239.0}
+            title="Xiaomi Mi Electric Scooter foldable electric scooter, made of aviation aluminum, with and without road approval (ABE) (app, max speed 20 - 25 km / h, range up to 30 - 45 km, max load 100 kg)"
+            price={399.0}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/71rUqcn4vJL._AC_SL1500_.jpg"
           />
         </div>
 
         <div className="home__row">
           <Product
             id="4903850"
-            title="SmartBand Garmin 2137-cu20"
-            price={199.99}
-            rating={3}
-            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            title="New Apple Watch Series 6 (GPS, 40 mm) aluminum housing blue, sports strap dark navy blue"
+            price={417.7}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/71clIIPhRnL._AC_SL1500_.jpg"
           />
           <Product
             id="23445930"

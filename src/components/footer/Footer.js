@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Footer.css";
 
 function Footer() {
+  const [language, setLanguage] = useState({
+    language: ["en", "fr", "it", "de"],
+  });
+
+  const handleChange = (event, data) => {
+    setLanguage(data.value);
+  };
+
   return (
     <div className="footer">
       <div className="footer__container">
@@ -98,9 +106,25 @@ function Footer() {
             src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
           />
         </div>
-        <div className="footer__input">
-          Choose language
-          <input type="text" />
+        <div className="footer__languagePicker">
+          <form action="" className="footer__languageForm">
+            <label for="footer__languageSelect">Choose language</label>
+
+            <select name="footer__languageSelect" id="language-picker-select">
+              <option lang="de" value="deutsch">
+                Deutsch
+              </option>
+              <option lang="en" value="english" selected>
+                English
+              </option>
+              <option lang="fr" value="francais">
+                Français
+              </option>
+              <option lang="it" value="italiano">
+                Italiano
+              </option>
+            </select>
+          </form>
         </div>
       </div>
     </div>

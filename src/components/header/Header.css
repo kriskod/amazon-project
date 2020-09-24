@@ -36,6 +36,9 @@
   background-color: #cd9042;
   cursor: pointer;
 }
+.header__option:hover {
+  text-decoration: none;
+}
 
 .header__optionLineOne {
   font-style: 10px;

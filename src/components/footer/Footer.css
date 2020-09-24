@@ -42,14 +42,16 @@
   border-top: 1px solid darkgray;
 }
 
-.footer__input {
+.footer__languagePicker {
   padding: 20px;
 }
 
-.footer__input > input {
-  margin-left: 20px;
-  border-radius: 5px;
-  border: 2px solid #cd9042;
+.footer__languageSelect {
+  background-color: whitesmoke;
+}
+
+.footer__languageForm > label {
+  margin-right: 10px;
 }
 
 .footer__logo {

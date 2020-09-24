@@ -2,6 +2,8 @@ export const initialState = {
   basket: [],
 };
 
+export const languages = {};
+
 export const getBasketTotal = (basket) =>
   basket?.reduce((amount, item) => item.price + amount, 0);
 
@@ -40,6 +42,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         basket: [],
+      };
+    case "SET_LANGUAGE":
+      return {
+        ...state,
+        language: action.setLanguage,
       };
 
     default:
