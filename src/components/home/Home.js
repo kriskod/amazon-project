@@ -1,9 +1,18 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import { Carousel } from "react-bootstrap";
 import Product from "../product/Product";
+import { Fade } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 import "./Home.css";
 
 function Home() {
+  const images = [
+    "https://cdn.pixabay.com/photo/2017/09/13/17/03/technology-2746212_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2017/05/06/14/13/pathway-2289978_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2015/10/12/15/18/clothing-store-984396_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2020/02/23/09/26/sound-4872771_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_960_720.jpg",
+  ];
   return (
     <div className="home">
       <div className="home__container">
@@ -12,63 +21,46 @@ function Home() {
           src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
           alt=""
         />
-        <div className="home__slider">
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="https://cdn.pixabay.com/photo/2017/09/13/17/03/technology-2746212_960_720.jpg"
-                alt="First slide"
-              />
-              <Carousel.Caption>
-                <h2>Electronics</h2>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="https://cdn.pixabay.com/photo/2017/05/06/14/13/pathway-2289978_960_720.jpg"
-                alt="Third slide"
-              />
-
-              <Carousel.Caption>
-                <h2>Gardening</h2>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="https://cdn.pixabay.com/photo/2015/10/12/15/18/clothing-store-984396_960_720.jpg"
-                alt="Third slide"
-              />
-
-              <Carousel.Caption>
-                <h2>Fashion</h2>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="https://cdn.pixabay.com/photo/2020/02/23/09/26/sound-4872771_960_720.jpg"
-                alt="Music"
-              />
-
-              <Carousel.Caption>
-                <h2>Music</h2>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_960_720.jpg"
-                alt="Music"
-              />
-
-              <Carousel.Caption>
-                <h2>Sport</h2>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
+        <div className="home__slider-row">
+          <div className="home__slider">
+            <Fade>
+              <div className="each-slide">
+                <div style={{ backgroundImage: `url(${images[0]})` }}>
+                  <span>
+                    <h2>Electronics</h2>
+                  </span>
+                </div>
+              </div>
+              <div className="each-slide">
+                <div style={{ backgroundImage: `url(${images[1]})` }}>
+                  <span>
+                    <h2>Garden</h2>
+                  </span>
+                </div>
+              </div>
+              <div className="each-slide">
+                <div style={{ backgroundImage: `url(${images[2]})` }}>
+                  <span>
+                    <h2>Fashion</h2>
+                  </span>
+                </div>
+              </div>
+              <div className="each-slide">
+                <div style={{ backgroundImage: `url(${images[3]})` }}>
+                  <span>
+                    <h2>Music</h2>
+                  </span>
+                </div>
+              </div>
+              <div className="each-slide">
+                <div style={{ backgroundImage: `url(${images[4]})` }}>
+                  <span>
+                    <h2>Sport</h2>
+                  </span>
+                </div>
+              </div>
+            </Fade>
+          </div>
         </div>
 
         <div className="home__row">

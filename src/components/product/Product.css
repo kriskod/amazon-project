@@ -15,8 +15,6 @@
 
 .product:hover {
   transition: all 0.25s ease-out;
-  -webkit-box-shadow: 0px 0px 35px 6px rgba(140, 140, 140, 0.46);
-  -moz-box-shadow: 0px 0px 35px 6px rgba(140, 140, 140, 0.46);
   box-shadow: 0px 0px 35px 6px rgba(140, 140, 140, 0.46);
 }
 
